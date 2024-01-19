@@ -1,0 +1,79 @@
+.tv-form{
+  width: 100%;
+  padding: $spacer-4 $spacer-3;
+
+  &-outer{
+    width: 100%;
+    margin: 50px 0;
+  }
+
+  &-wrap{
+    width: 100%;
+    max-width: 768px;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: $color-white;
+    box-shadow: 0px 6px 12px 0px rgba(0, 0, 0, 0.10), 0px 23px 23px 0px rgba(0, 0, 0, 0.09), 0px 51px 31px 0px rgba(0, 0, 0, 0.05), 0px 91px 36px 0px rgba(0, 0, 0, 0.01), 0px 142px 40px 0px rgba(0, 0, 0, 0.00);
+    margin: 0 auto;
+  }
+
+  &__row{
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    flex-direction: column;
+
+    .tv-input-wrap{
+      width: 100%;
+    }
+  }
+  
+  &__text{
+    font-size: 18px;
+    font-weight: 400;
+    color: $color-black;
+    text-align: center;
+    text-decoration: none;
+    margin-bottom: $spacer-6;
+  }
+
+  &__cnt{
+    width: 100%;
+  }
+
+  &__btn-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: $spacer-4;
+  }
+}
+
+@include tablet{
+  .tv-form{
+    &-wrap{
+      padding: $spacer-5;
+    }
+    &__row{
+      flex-direction: row;
+      margin: 0 -12px;
+      .tv-input-wrap{
+        width: calc(50% - 24px);
+        margin-right: 12px;
+        margin-left: 12px;
+      }
+    }
+  }
+}
+
+@include desktop{
+  .tv-form{
+    padding: 0;
+    &-wrap{
+      padding: 64px;
+    }
+    &-outer{
+      margin: 80px 0;
+    }
+  }
+}

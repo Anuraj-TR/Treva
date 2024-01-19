@@ -1,0 +1,25 @@
+.tv-header{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: $spacer-4;
+  &-wrap{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+  }
+
+  &--sticky{
+    background: linear-gradient(180deg, #03062F 0%, #180B74 100%);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+  }
+}
+
+@include tablet-pro{
+  .tv-header{
+    padding: 28px 0;
+  }
+}

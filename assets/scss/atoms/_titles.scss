@@ -1,0 +1,26 @@
+.tv-title{
+  font-size: 32px;
+  font-weight: 600;
+  text-decoration: none;
+  text-align: left;
+  margin-bottom: $spacer-3;
+  color: $color-white;
+
+  &--form{
+    font-weight: 700;
+    color: $color-black;
+    text-align: center;
+  }
+}
+
+@include tablet{
+  .tv-title{
+    font-size: 36px;
+  }
+}
+
+@include tablet-pro{
+  .tv-title{
+    font-size: 40px;
+  }
+}

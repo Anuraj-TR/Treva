@@ -1,0 +1,38 @@
+.tv-input-wrap{
+  margin-bottom: $spacer-3;
+  input,
+  .tv-input{
+    width: 100%;
+    background-color: $color-white;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    padding: 12px;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+
+  label,
+  .tv-input__labe{
+    font-size: 16px;
+    font-weight: 400;
+    color: $color-black;
+    display: inline-block;
+    margin-bottom: $spacer-2;
+  }
+
+  textarea,
+  .tv-input__textarea{
+    width: 100%;
+    min-height: 180px;
+    background-color: $color-white;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    padding: 12px;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+}
+
+@include tablet-pro{
+  .tv-input-wrap{
+    margin-bottom: $spacer-4;
+  }
+}
